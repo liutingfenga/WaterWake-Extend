@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  min-width: 350px; /* 从固定width改为min-width */
+  padding: 15px;
+  background-color: #f5f9ff;
+  height: auto; /* 确保高度自动适应内容 */
+  overflow-y: visible; /* 允许内容超出时页面自然延伸 */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 14px;
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+.progress-container {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(-45deg, #2795df 50%, #2e59d4 60%, #0a0e92 70%);
+  background-size: 600% 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+  -webkit-animation: shine 20s infinite;
+  animation: shine 20s infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.progress-text {
+  text-align: right;
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.buttons-container {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.water-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.water-btn {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #0a0e92;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.water-btn:hover {
+  background-color: #2980b9;
+}
+
+/* 修改图表容器样式 */
+.calendar-container {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 添加水平展示的样式 */
+.water-record-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.water-record-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.water-record-date {
+  font-size: 12px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.water-record-amount {
+  font-size: 12px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+#settings-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0a0e92;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#settings-btn:hover {
+  background-color: #2980b9;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-header h2 {
+  margin: 0;
+}
+
+.toggle-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0a0e92;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.toggle-btn:hover {
+  background-color: #2980b9;
+}
+
+.chart-container {
+  margin-top: 10px;
+}
+
+.records-content {
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 1000px; /* 设置一个足够大的值，确保内容能完全展示 */
+  opacity: 1;
+  overflow: visible; /* 改为visible，让内容可以自然流动 */
+}
+
+.records-content.hidden {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden; /* 隐藏时保持hidden */
+}
+
+
+/* 喝水有益容器样式 */
+.benefits-container {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefits-header h2 {
+  margin: 0;
+}

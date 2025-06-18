@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>一定喝水 - 设置</title>
+  <link rel="stylesheet" href="css/options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>一定喝水 - 设置</h1>
+    
+    <div class="settings-section">
+      <h2>基本设置</h2>
+      
+      <div class="setting-item">
+        <label for="target-amount">每日目标饮水量 (ml)</label>
+        <input type="number" id="target-amount" min="500" max="5000" step="100">
+      </div>
+      
+      <div class="setting-item">
+        <label for="reminder-enabled">启用喝水提醒</label>
+        <label class="switch">
+          <input type="checkbox" id="reminder-enabled">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      
+      <div class="setting-item" id="interval-container">
+        <label for="reminder-interval">提醒间隔 (分钟)</label>
+        <input type="number" id="reminder-interval" min="15" max="240" step="15">
+      </div>
+      
+      <div class="setting-item">
+        <label for="custom-water-amount">自定义饮水按钮数值 (ml)</label>
+        <input type="number" id="custom-water-amount" min="50" max="1000" step="50" value="500">
+      </div>
+    </div>
+    
+    <div class="settings-section">
+      <h2>数据管理</h2>
+      <button id="clear-today">清除今日数据</button>
+      <button id="clear-all">清除所有数据</button>
+    </div>
+    
+    <div class="button-container">
+      <button id="save-btn">保存设置</button>
+    </div>
+  </div>
+  
+  <script src="js/db.js"></script>
+  <script src="js/options.js"></script>
+</body>
+</html>

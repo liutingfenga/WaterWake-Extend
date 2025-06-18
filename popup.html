@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>一定喝水</title>
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/confetti.css">
+  <style>
+    /* 确保图表容器有明确的尺寸 */
+    #chart-container {
+      width: 100%;
+      height: 200px;
+      min-height: 200px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>一定喝水</h1>
+
+    <div class="progress-container">
+      <h2>今日饮水进度</h2>
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+      <div class="progress-text">
+        <span id="current-amount">0</span>ml / <span id="target-amount">2000</span>ml
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <h2>添加饮水量</h2>
+      <div class="water-buttons">
+        <button class="water-btn" data-amount="100">100ml</button>
+        <button class="water-btn" data-amount="200">200ml</button>
+        <button class="water-btn" data-amount="300">300ml</button>
+      </div>
+    </div>
+
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <h2>最近7天饮水记录</h2>
+        <button id="toggle-records" class="toggle-btn">展开</button>
+      </div>
+      <div id="records-content" class="records-content hidden">
+        <div id="chart-container"></div>
+      </div>
+    </div>
+
+    <div class="benefits-container">
+      <div class="benefits-header">
+        <h2>✅喝水有益</h2>
+        <button id="toggle-benefits" class="toggle-btn">展开</button>
+      </div>
+      <div id="benefits-content" class="records-content hidden">
+        <div style="
+        background-color: #dddddd;
+        padding: 15px;
+        margin-top: 30px;">
+          <ul>
+            <li><strong>维持身体机能：</strong>水参与体内所有代谢过程，是生命活动不可缺少的组成部分。</li>
+            <li><strong>促进排毒：</strong>帮助肾脏排出代谢废物和毒素，预防结石。</li>
+            <li><strong>保持皮肤健康：</strong>充足的水分能让皮肤保持水润、有弹性。</li>
+            <li><strong>帮助消化：</strong>喝水能促进肠胃蠕动，预防便秘。</li>
+            <li><strong>调节体温：</strong>水有助于通过出汗和呼吸调节体温。</li>
+            <li><strong>提升专注力和精力：</strong>脱水会影响大脑功能，适量喝水有助于保持清醒和注意力集中。</li>
+            <li><strong>控制体重：</strong>饭前喝水可以减少食量，有助于控制体重。</li>
+          </ul>
+        </div>
+
+
+        <div class="tip" style="background-color: #e9f5f2;
+        border-left: 5px solid #2a9d8f;
+        padding: 15px;
+        margin-top: 30px;">
+          <h2>💡 小贴士</h2>
+          <ul>
+            <li>成人每日建议饮水量约为 <strong>1500-2000毫升</strong>，根据活动量、气温和个体差异有所不同。</li>
+            <li>不要等到口渴才喝水，口渴时身体已处于轻度脱水状态。</li>
+            <li>清晨起床后、饭前半小时、运动前后都是喝水的好时机。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button id="settings-btn" class="shiny">设置</button>
+    </div>
+  </div>
+
+  <script src="js/echarts.min.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+
+</html>
