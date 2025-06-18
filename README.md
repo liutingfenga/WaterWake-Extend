@@ -1,13 +1,16 @@
-示例：
-![wechat_2025-06-18_174801_208](https://github.com/user-attachments/assets/5b60020d-98a2-4dc6-9862-d69ce35cfdd4)
-![wechat_2025-06-18_174811_444](https://github.com/user-attachments/assets/d6da40b4-f549-4e1d-8df4-d40228143044)
-![wechat_2025-06-18_174753_773](https://github.com/user-attachments/assets/6bf9b76a-31a8-434e-b398-309bab6f5aba)
 
 # 一定喝水 💧
 
 > 喝水不要下次一定，要一定喝水！
 
 一个简洁实用的Chrome浏览器扩展，帮助您养成良好的饮水习惯，保持身体健康。
+
+## 🖼️ UI示例
+
+![wechat_2025-06-18_174801_208](https://github.com/user-attachments/assets/5b60020d-98a2-4dc6-9862-d69ce35cfdd4)
+![wechat_2025-06-18_174811_444](https://github.com/user-attachments/assets/d6da40b4-f549-4e1d-8df4-d40228143044)
+![wechat_2025-06-18_174753_773](https://github.com/user-attachments/assets/6bf9b76a-31a8-434e-b398-309bab6f5aba)
+
 
 ## ✨ 功能特性
 
@@ -39,8 +42,8 @@
 
 1. **下载源码**
    ```bash
-   git clone https://github.com/your-username/water-reminder-extension.git
-   cd water-reminder-extension
+   git clone https://github.com/liutingfenga/WaterWake-Extend.git
+   cd WaterWake-Extend
    ```
 
 2. **打开Chrome扩展管理页面**
@@ -137,11 +140,6 @@ heshui/
 
 欢迎提交Issue和Pull Request！
 
-1. Fork本项目
-2. 创建特性分支：`git checkout -b feature/AmazingFeature`
-3. 提交更改：`git commit -m 'Add some AmazingFeature'`
-4. 推送分支：`git push origin feature/AmazingFeature`
-5. 提交Pull Request
 
 ## 📄 许可证
 
