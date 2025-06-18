@@ -8,9 +8,8 @@
 ## 🖼️ UI示例
 
 ![wechat_2025-06-18_174801_208](https://github.com/user-attachments/assets/5b60020d-98a2-4dc6-9862-d69ce35cfdd4)
-![wechat_2025-06-18_174811_444](https://github.com/user-attachments/assets/d6da40b4-f549-4e1d-8df4-d40228143044)
 ![wechat_2025-06-18_174753_773](https://github.com/user-attachments/assets/6bf9b76a-31a8-434e-b398-309bab6f5aba)
-
+![wechat_2025-06-18_174811_444](https://github.com/user-attachments/assets/d6da40b4-f549-4e1d-8df4-d40228143044)
 
 ## ✨ 功能特性
 
